@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Productions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color:  #d4af37;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit of see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+
+
+        /* Dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color:  #d4af37;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color:  #4a3903;
+        }
+
+        /* Fade animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        /* Footer styles */
+        footer {
+            background: #060124;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 20px;
+        }
+        .footer-column h3 {
+            margin-bottom: 20px;
+        }
+        .footer-column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        .footer-column ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer-column img{
+           width: 120px;
+           height: 120px;
+           display: flex;
+        }
+       
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>                                                                                                                                                          
+    <header>
+        <div class="logo">
+            <img src="KP_Logo.png" alt="K Productions">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#productions">Productions</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="#mission">Our Mission</a></li>
+                <li><a href="#partners">Our Partners</a></li>
+                <li><a href="#enquiry">Enquire Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            
+            <img src="IMG-20240523-WA0023.jpg" style="width:100%">
+            
+        </div>
+
+        <div class="mySlides fade">
+            
+            <img src="IMG-20240523-WA0026.jpg" style="width:100%">
+            
+        </div>
+
+        <div class="mySlides fade">
+            
+            <img src="WhatsApp Image 2024-05-23 at 16.27.14_1f67024c.jpg" style="width:100%">
+            
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <main>
+       
+        </section>
+        <!-- Content Sections Here -->
+        <section id="about">
+            <h1 class="gradient-heading">About Us</h1>
+            <p>K Productions stands as a professional and innovative production company, founded by in 2018. The organisation adheres to the terms and policies outlined by NPO regulations in South Africa. Our focus revolves around pioneering concepts that have an impact on our nation's development, approached with a fresh perspective. Although the company is relatively new, it has garnered significant support and partnerships from esteemed entities such as the Department of Education, Matthew Goniwe School of Leadership and Governance, University of Pretoria, BASA, ATKV, NETCB, City of Tshwane, Sun International, Music is an Investment, The Department of International Relations (DIRCO), European Union and other pertinent bodies. Through these alliances, the production has gained access to collaborate with numerous underperforming schools in and out of South Africa, a testament to the rapport we have built.</p>
+            <p>Our original works have garnered international recognition and support, notably in South America, specifically Argentina - Bueno Aires, La Plata, and Greece - Kefalonia Athens, facilitated by the Department of Arts and Culture. Our productions have resonated with over 25,000 individuals, including learners and members of the community. This reach has been achieved by partnering with 21 secondary schools in recent years in conjunction with the Department of Education. </p>
+            <p>K Productions remains dedicated to reigniting a passion for performing arts through our subsequent productions. Theatre serves as our medium of communication, a powerful vehicle for education and inspiration. Our team of key members and facilitators are well-qualified and experienced in delivering these services. </p>
+            <br>
+            <br>
+      
+        </section>
+
+        <section id="productions">
+            <h1 class="gradient-heading">Our Productions</h1>
+            <!-- Production items here -->
+            <div class="productions-container">
+                <div class="production-item">
+                    <a href="mindful_health.html" class="production-link">
+                        <div class="production-poster">
+                            <img src="Mindful Health.png" alt="Production 1">
+                        </div>
+                        <div class="production-description">
+                            <p>Through this talk show, we engaged experts in conversations about holistic well-being, including mental, emotional, and physical health.</p>
+                            <p> The show aimed to educate, inspire, and equip individuals with tools for healthier living.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="production-item">
+                    <a href="programme_radio.html" class="production-link">
+                        <div class="production-poster">
+                            <img src="Programme radio.png" alt="Production 2">
+                        </div>
+                        <div class="production-description">
+                            <p>Programme radio description placeholder.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="production-item">
+                    <a href="youth_mental_health.html" class="production-link">
+                        <div class="production-poster">
+                            <img src="Youth Mental Health.png" alt="Production 2">
+                        </div>
+                        <div class="production-description">
+                            <p>Our symposium brought together experts, educators, and young individuals to discuss and address mental health challenges facing youth.</p>
+                            <p> The event promoted awareness, reduced stigma, and provided valuable resources for support.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="production-item">
+                    <a href="beauty_of_the_world.html" class="production-link">
+                        <div class="production-poster">
+                            <img src="Beauty of the world.png" alt="Production 2">
+                        </div>
+                        <div class="production-description">
+                            <p>This showcase celebrated the diverse cultures and traditions that make up South Africa.</p>
+                            <p> Through music, dance, and visual art, we highlighted the richness of our heritage, promoting mutual respect and understanding among different communities</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="production-item">
+                    <a href="hear_me_out.html" class="production-link">
+                        <div class="production-poster">
+                            <img src="Hear Me Out.png" alt="Production 2">
+                        </div>
+                        <div class="production-description">
+                            <p>Through this theatrical production, we provided a platform for young individuals to express their talent on various stages, providing them with much needed exposure. </p> 
+                            <p>This platform also allows for the expression of societal ills through the medium of creative arts. </p>
+                            <p>By fostering self- expression, we encouraged open dialogue and a sense of belonging among participants.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="production-item">
+                    <a href="the_survivor.html" class="production-link">
+                        <div class="production-poster">
+                            <img src="The survivor.png" alt="Production 2">
+                        </div>
+                        <div class="production-description">
+                            <p>This powerful production shed light on the stories of survivors of trauma and adversity. </p> 
+                            <p>By sharing these narratives through theatre, we aimed to inspire resilience, empathy, and support within the community.</p>
+                    
+                        </div>
+                    </a>
+                </div>
+                <div class="production-item">
+                    <a href="save_a_soul.html" class="production-link">
+                        <div class="production-poster">
+                            <img src="Save a Soul.png" alt="Production 2">
+                        </div>
+                        <div class="production-description">
+                            <p>Through collaborative efforts, we organized outreach events that aimed to uplift underprivileged communities.</p>
+                            <p>These events included food drives, educational workshops, and arts activities, fostering a sense of solidarity and care.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Add more production items as needed -->
+            </div>
+        </section>
+        
+        <section id="services">
+            <h1 class="gradient-heading">Our Services</h1>
+            <img src="mission pictures\Untitled.png" width="100%"  alt="K Productions talkshow"><!--Add services picture-->
+            <div class="services-container" style="text-align: center;">
+                
+                <div class="item">
+                    <h4>Empowerment and Awareness</h4>
+                    <p> Our initiatives like "Hear Me Out" and "The Beauty of the World" have empowered individuals to share their stories and cultures, fostering a sense of identity and appreciation. The "Survivor" production and "Youth Mental Health Symposium" have sparked crucial conversations, breaking down stigmas and promoting mental well-being. </p>
+                </div>
+                <div class="item">
+                    <h4>Community Awareness</h4>
+                    <p>Through events like "Save A Soul," we've connected with underserved communities, providing them with resources, education, and support. This approach promotes unity and upliftment.</p>
+                </div>
+                <div class="item">
+                    <h4>Healing and Express</h4>
+                    <p>  Projects such as "Art Therapy" and "Mindful Health Talk Show" have provided platforms for healing, self-expression, and learning. By addressing mental health and offering creative outlets, we've contributed to improved well-being. </p>
+                </div>
+                <div class="item">
+                    <h4>Educational Impact</h4>
+                    <p>Our endeavours have often included educational components that have enriched the lives of learners. Workshops, symposiums, and educational performances like "The Beauty of the World" have expanded knowledge and promoted empathy. </p>
+                </div>
+
+            </div>
+            <div class="decorative-subheading">
+                <h2>What We Can Do For You</h2>
+            </div>
+            <p>Our approach involves utilizing theatre, storytelling, and talk shows as our delivery methods. Our scope isn't confined to communities and schools; corporate entities in need of our services can also benefit.</p>
+            <div class="play-container">
+                <div class="play-item">
+                    <img src="mission pictures\Untitled (1).png" alt="">
+                
+                </div>
+                <div class="play-item">
+                    <img src="mission pictures\Untitled (2).png" alt="">
+                
+                </div>
+                <div class="play-item">
+                    <img src="mission pictures\Untitled (3).png" alt="">
+                
+                </div>
+            </div>
+        </section>
+
+        <section id="mission">
+            <h1 class="gradient-heading">Our Mission</h1>
+            <p>K Productions remains dedicated to reigniting a passion for performing arts through our subsequent productions. Theatre serves as our medium of communication, a powerful vehicle for education and inspiration. Our team of key members and facilitators are well-qualified and experienced in delivering these services.
+            <p>Our mission is grounded in a commitment to excellence and equipping learners and communities with strong ethics. This aims to influence their environment, enhance academic performance, and expose them to avenues of prevention and healing. Additionally, we strive to create job opportunities and transfer skills to unemployed artists who meet the criteria.</p>
+            <p>Our approach involves utilising theatre, storytelling, and talk shows as our delivery methods. Our scope isn't confined to communities and schools; corporate entities in need of our services can also benefit.</p>
+            <br>
+            <div class="decorative-subheading">
+                <h2>Our Diverse Tapestry of Opportunities</h2>
+            </div>
+            <div class="mission-container">
+                
+                <div class="mission-item">
+                    <img src="mission pictures\Dramatic arts.png" alt="Dramatic arts">
+                    <p> Acting is a transformative skill that transports individuals into imaginative realms, allowing them to express emotions, alleviate stress, and engage with peers.</p>
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\Sing&Dance.png" alt="Sing and Dance">
+                    <p>Cultural: Our cultural music initiatives rekindle South Africa's authentic heritage and the inherent gift for singing. This component fosters a deep connection with cultural elements, igniting passion and love for our diverse traditions.</p>
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\Music.png" alt="musical note">
+                    <p>(Musical Instruments - Guitar, Saxophone, Drum): Instrumental music empowers learners to compose original pieces, embracing the fusion of various cultures and races through mutual learning.</p>
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\Present.png" alt="presentation slide">
+                    <p>Designed for those who flourish on stage or in front of cameras, this platform nurtures confident and skilled presenters.</p>
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\Visual Arts.png" alt="paint and paintbrush">
+                    <p>Our Visual Arts program empowers learners to craft purposeful expressions, harnessing their potential to communicate emotions creatively.</p>
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\Skills develop.png" alt="Video camera and film">
+                    <p>(Production Cast & Crew): Learners with organizational, technical, and managerial skills are incorporated into our productions, offering valuable exposure and work ethic enhancement.
+                    <p>At K Productions, we are committed to advancing artistic endeavours, nurturing talent, and fostering a holistic understanding of the performing arts.</p>
+                
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\SA flag.png" alt="South African flag">
+                    <p>At K Productions, we firmly believe in the importance of igniting our South African heritage. Our cultural music and arts initiatives serve as a conduit to reconnect with our rich history, traditions, and diversity. Through the medium of performance, we aim to reignite the flames of cultural pride and appreciation for our unique identity</p>
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\Culture elements.png" alt="cultural mask">
+                    <p>Our efforts go beyond mere entertainment; we encourage an exploration of cultural elements that accelerate passion and love for our heritage. We celebrate the stories, rhythms, and expressions that define South Africa, fostering a deeper connection to our roots.</p>
+                    <p>By showcasing our heritage through various art forms, we empower individuals to take pride in their cultural background. This is vital in fostering unity and understanding among diverse communities within our nation.</p>
+                    
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\Building bridges.png" alt="Handshake">
+                    <p>Igniting our South African heritage bridges generational gaps, as the young gain insight into their traditions and the older generation witnesses their heritage embraced with enthusiasm. This fosters mutual understanding and respect.</p>
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\Legacy.png" alt="Watch with arrow">
+                    <p>Through our productions and initiatives, we contribute to the preservation and continuation of our cultural legacy. We believe that a strong sense of cultural identity enhances our sense of belonging and contributes to a harmonious society.</p>
+                    <p>K Productions is dedicated not only to artistic excellence but also to igniting our South African heritage. Through our creative endeavours, we aim to inspire a renewed appreciation for our culture, enrich our collective identity, and contribute to a brighter future for our nation.</p>
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\GBV.png" alt="violence between couple">
+                    <p>Gender-Based Violence (GBV) refers to any harmful act directed at an individual based on their gender, resulting in physical, sexual, psychological, or economic harm. Fighting GBV is essential as it violates basic human rights, undermines social progress, and perpetuates inequalities. It is a pressing global issue that requires collective efforts to eliminate.</p>
+                    <p>Prevalence of GBV in South Africa: Statistics reveal the urgent need to address GBV in South Africa. According to a study by Statistics South Africa (Stats SA), the country experiences high levels of GBV. In 2020, the police recorded 58,344 sexual offenses, and there were 2,695 femicides reported. These alarming numbers underscore the severity of the problem and emphasize the necessity of proactive interventions.</p>
+                    <p>K productions is an activist in the fight against GBV. It uses various art forms to highlight some of the subtleties that have become societal norms, which give birth to GBV. Art forms as expressive vehicles allow the audience introspective space using humour as a gateway.</p>
+                
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\Women Empowerment.png" alt="women showing muscle">
+                    <p>Empowering young women is pivotal for societal advancement. When young women have access to education, equal opportunities, and resources, they can contribute meaningfully to their communities and the economy.</p>
+                    <p>Empowerment also involves advocating for their rights, including reproductive health, education, and freedom from violence. Upholding human rights ensures dignity, equality, and justice for all, and it's a cornerstone of a just and inclusive society.</p>
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\Human Rights.png" alt="scale">
+                    <p>Human rights are fundamental principles that acknowledge the inherent value and dignity of every individual. They ensure that individuals are entitled to basic rights and freedoms without discrimination. Human rights encompass civil, political, economic, social, and cultural rights that are universally recognized and protected by international law.</p>
+                    <p>Upholding human rights is essential for creating a just and equitable society. It promotes respect for individual autonomy, prevents discrimination and injustice, and fosters peaceful coexistence. Human rights contribute to social stability, economic development, and the overall well-being of individuals and communities. By respecting and protecting human rights, societies can work toward eliminating poverty, inequality, and various forms of discrimination, ultimately creating an environment where everyone can thrive. Through our productions and initiatives, we strive to inspire positive change and contribute to a more inclusive and compassionate world.</p>
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\Art & Culture.png" alt="Art and culture">
+                    <p>Arts and culture play a pivotal role in shaping societies and individuals. They act as mirrors that reflect the essence of our humanity, our values, and our shared experiences. The arts foster creativity, critical thinking, and self-expression, nurturing holistic development. Culture, on the other hand, binds us to our roots, providing a sense of belonging and identity.</p>
+                    <p>Art has the power to transcend boundaries and communicate ideas that evoke social change. It encourages dialogue on pressing issues, raising awareness and fostering empathy among diverse audiences.</p>
+                
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\Social change.png" alt="Fist lifting bolt screw">
+                    <p>Culture safeguards traditions, languages, and historical narratives, preserving the stories of our past for future generations. It is through cultural expression that we honour our ancestors and maintain a connection to our heritage.</p>
+                </div>
+                <div class="mission-item">
+                    <img src="mission pictures\Tourism.png" alt="World economy & plane">
+                    <p>The arts and cultural sectors contribute to economies by generating employment and attracting tourism. Festivals, performances, and cultural exhibitions can be major draws for visitors, boosting local economies.</p>
+                    <p>Arts and culture transcend geographical barriers, enabling individuals to connect with people from different backgrounds. This interaction promotes mutual respect and global understanding.</p>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section id="enquiry">
+            <h1 class="gradient-heading">Contact Us</h1>
+            <div class="enquiry-container">
+                <form id="enquiry-form" method="post" action="https://formspree.io/f/xovajylb" >
+                    <h3>Enquiry form</h3>
+                    <input type="text" id="name" name="name" placeholder="name" required>
+                    <input type="email" id="email_id" name="email" placeholder="email" required>
+                    <input type="text" id="phone" name="phone" placeholder="phone number" required>
+                    <input type="text" id="organisation" name="company" placeholder="company name" required>
+                
+                    <textarea name="project_description" id="description" placeholder="short description" required></textarea>
+                    
+                    <h3>Consent and Permissions</h3>
+                    <p>"By submitting this form I agree to the terms and conditions and understand that this is an enquiry form and does not constitute a binding agreement." </p>
+                    <button type="submit" style="text-align: center;">Submit</button>
+                </form>
+               
+            </div>
+
+            <div class="decorative-subheading">
+               <h2>Our Partners, Stakeholders & Sponsers</h2> 
+            </div>
+            <img src="Untitled (5).png" alt="Sponsers" class="partners">
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: OKKproduction27@gmail.com</li>
+                    <li>Phone: 0788208455 / 0676662367</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#productions">Productions</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#mission">Our Mission</a></li>
+                    <li><a href="#enquiry">Enquire now</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>About</h3>
+                <p>K Productions, founded in 2018, is an innovative production company in South Africa adhering to NPO regulations, collaborating with prestigious partners to impact national development through theater and education, and gaining international recognition for its work.</p>
+            </div>
+
+            <div class="footer-column">
+                <img  src="WhatsApp Image 2024-02-29 at 16.44.39_23f0d88d.jpg" alt="">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 K Productions. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
+
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

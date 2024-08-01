@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Survivor</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline CSS for specific page styles */
+        .production-page-container {
+            padding: 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
+            color: #fff;
+        }
+
+        .production-page-heading {
+            text-align: center;
+            font-size: 2.5em;
+            color: #e7c965;
+            margin-bottom: 2rem;
+            
+        }
+
+        .production-details {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .production-description {
+            margin-bottom: 2rem;
+            background-color: black;
+        }
+
+        .production-detail-credits{
+            color:#e7c965
+        }
+
+        .media-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .media-item {
+            width: 45%;
+            background-color: #131313;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(51, 76, 216, 0.837);
+        }
+
+        .media-item img, .media-item video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .media-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="KP_Logo.png" alt="Logo">
+        </div>
+        <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="productions.html">Productions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="production-page-container">
+        <h1 class="production-page-heading">'The Survivor' Theatre Production</h1>
+
+        <div class="production-description">
+            <p>This powerful production shed light on the stories of survivors of trauma and adversity. By sharing these narratives through theatre, we aimed to inspire resilience, empathy, and support within the community.</p>
+        </div>
+        
+        <div class="media-section">
+
+            <br>
+            <div class="media-item">
+                <img src="production images\0E7FF2A6-5033-43DC-9D34-AAD71213C679_1_105_c.jpeg" >
+            </div>
+            <br>
+            <div class="media-item">
+                <img src= "production images\IMG-20180703-WA0007.jpg">
+            </div>
+            <br>
+            <div class="media-item">
+                <img src="production images\IMG-20180703-WA0008.jpg" alt="Production 1 Image 2">
+            </div>
+            <br>
+            <div class="media-item">
+                <img src= "production images\0F0FCD09-42CA-4C24-AB24-4399506E37AB_1_105_c.jpeg">
+            </div>
+            <br>
+            <div class="media-item">
+                <img src="production images\IMG-20180703-WA0010.jpg">
+            </div>
+            <br>
+            <div class="media-item">
+                <img src= "production images\IMG-20180703-WA0011.jpg">
+            </div>
+            <br>
+            <div class="media-item">
+                <img src= "production images\IMG-20180703-WA0013.jpg">
+            </div>
+            <div class="media-item">
+                <img src= "production images\IMG-20180703-WA0016 (1).jpg">
+            </div>
+            <div class="media-item">
+                <img src= "production images\0F0FCD09-42CA-4C24-AB24-4399506E37AB.jpeg">
+            </div>
+            <div class="media-item">
+                <img src= "production images\IMG-20180703-WA0021.jpg">
+            </div>
+            <div class="media-item">
+                <img src= "production images\IMG-20180703-WA0025.jpg">
+            </div>
+            
+
+        </div>
+        
+    </main>
+
+    <footer>
+        <button class="login-button">Login</button>
+    </footer>
+
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="loginForm">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show-menu');
+        });
+
+        document.querySelector('.close').addEventListener('click', function() {
+            document.querySelector('.modal').style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target == document.querySelector('.modal')) {
+                document.querySelector('.modal').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
